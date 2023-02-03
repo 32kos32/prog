@@ -1,0 +1,205 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+/* @media all and (height: 480px) */
+body
+{
+    position: relative;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    /* display:flex; */
+    justify-content: center;
+    align-items: center;
+    /* min-height: 2rem; */
+    background: black;
+}
+.container
+{
+    /* margin-left: 20%; */
+    /* @media screen and handheld (height:1000px) */
+    /* gap: 1em; */
+    max-width: 60%;
+    /* min-height: 90vh; */
+    height: 100vh;
+    position: relative;
+    /* display: block; */
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(17, 17, 17);
+    overflow: hidden;
+}
+#circle1
+{
+    content: '';
+    /* position: relative; */
+    /* position: fixed; */
+    /* top: -20rem; */
+    /* left: -20rem; */
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(rgb(0, 0, 0),rgb(99, 21, 162)) 70%;
+    clip-path: polygon(0 10%, 20% 0, 63% 88%, 42% 100%);
+}
+#circle2
+{
+    content: '';
+    /* background: white; */
+    background: linear-gradient(
+        to right bottom,
+        rgb(255, 255, 255),
+        rgb(0, 0, 255) 80%
+    );
+    height: 40vmax;
+    width: 40vmax;
+    /* height: 30rem; */
+    /* width: 30rem; */
+    position: absolute;
+    border-radius: 50%;
+
+    /* top: 30%; */
+    bottom: 0;
+    /* left: 0; */
+    /* right: 50%; */
+    transform: translate(70%, 35%);
+}
+#circle3
+{
+    content: '';
+    /* background: rgb(0,184,255); */
+    background: linear-gradient(235deg, rgb(255, 80, 0) 0%, rgb(0, 0, 0) 70%);
+    height: 25rem;
+    width: 22rem;
+    position: absolute;
+    border-radius: 60%;
+
+    top: 68%;
+    right: 70%;
+    transform: skewX(-18deg);
+    /* transform: translate(20% 30%); */
+}
+#circle4
+{
+    content: '';
+    position: absolute;
+    top: -15rem;
+    left: 10rem;
+    width: 80%;
+    height: 100%;
+
+    background: linear-gradient(rgb(0, 0, 0),rgb(99, 21, 162)) 70%;
+    clip-path: polygon(76% 0, 100% 17%, 72% 64%, 47% 46%);
+
+}
+.card
+{
+    position: absolute;
+    /* margin: 20%; */
+    /* align: center; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* left: 5vw; */
+    /* position: fixed; */
+    /* min-width: 85%; */
+    width: 80%;
+
+    /* max-height: 25%; */
+    /* min-width: 1%; */
+    /* min-height: 35%; */
+    /* margin-bottom: -15rem; */
+    bottom: 15%;
+
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 3rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40rem);
+    -webkit-backdrop-filter: blur(3rem);
+    border: 0.06rem solid rgba(255, 255, 255, 0.2);
+}
+.orange-text, .content, h2
+{
+    margin: 5%;
+    /* width: 10rem; */
+    /* height: 10rem; */
+    /* position: relative; */
+    /* margin: 1rem; */
+    color: rgb(186, 59, 0);
+    /* text-align: left; */
+    /* text-align: start; */
+    /* left: 20rem; */
+    /* display: block; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: auto; */
+}
+.white-color
+{
+    color: white;
+}
+ul, li{
+    margin: 1rem;
+    font-size:xx-large;
+    text-align: left;
+    text-align: start;
+}
+.text-h1
+{
+    color: white;
+    /* text-align: center; */
+    /* margin-bottom: 35rem; */
+    /* margin-left: 5rem; */
+    /* position: absolute; */
+    /* font-size: xx-large; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* text-align: center; */
+    /* display: flex; */
+}
+/* .buttom
+{
+    width: 12rem;
+    height: 3rem;
+    font-size:x-large;
+    left: 18rem;
+    bottom: 28.4rem;
+    /* text-align: right; */
+    /* border-radius: 2rem; */
+    /* background: linear-gradient(to right, blue,rgb(67, 174, 255)) 50%; */
+    /* position:relative; */
+    /* position: -webkit-sticky; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+/* } */
+h2
+{
+    text-align: center;
+    text-align: center;
+    margin-left: -4rem;
+    /* left: 20rem; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* margin-top: -5rem; */
+    /* margin-bottom: -5rem; */
+}
+h1
+{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    text-align: start;
+    margin-bottom: 20rem;
+    margin-left: -4rem;
+    /* position:-webkit-sticky; */
+}

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    /* overflow: auto; */
+}
+
+body {
+    background: black;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-attachment: fixed;
+    display: grid;
+    justify-content: center;    
+    /* -webkit-clip-path: inset(0); */
+    /* clip-path: inset(0); */
+    /* overflow: hidden; */
+
+
+}
+
+.container-all {
+    width: 80%;
+    height: 55em;
+    margin: 0 auto;
+    /* display: block; */
+    background-color: rgb(17, 17, 17);
+    /* content: center; */
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    /* clip-path: inset(0); */
+    position: relative;
+    /* -webkit-clip-path: inset(0); */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    align-items: center;
+}
+
+.conteiner-glass {
+    margin: 10vw;
+    margin-top: 4vw;
+    display: block;
+    width: auto;
+    height: max-content;
+    word-break: keep-all;
+    position: relative;
+
+    background: rgba(255, 255, 255, 0);
+    border-radius: 46px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.container-text {
+    margin: 40px;
+    font-size: xx-large;
+}
+
+ul {
+    margin: 20px;
+}
+
+li {
+    margin: 20px;
+}
+
+li span {
+    color: white;
+}
+
+h2 {
+    position: relative;
+    /* top: 25vh; */
+    top: 4.5em;
+    text-align: center;
+    font-size: 40px;
+}
+
+h1 {
+    margin-top: 4em;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    /* quotes: \201C \201D;  */
+    /* quotes: \201D \201E;  */
+}
+
+.color-red, h2, .container-text {
+    color: rgb(201, 73, 56);
+}
+
+#circle {
+    width: 320px;
+    height: 320px;
+    
+    background: rgb(0,184,255);
+    background: radial-gradient(circle, rgba(0,184,255,1) 0%, rgba(95,75,144,1) 100%);
+
+    -moz-border-radius: 180px;
+    -webkit-border-radius: 180px;
+    border-radius: 180px;
+
+    position: absolute;
+    /* bottom: 200px; */
+    top: 200px;
+    left: 200px;
+    /* display:run-in; */
+    /* margin-block-start: -30vw; */
+    /* margin-right: 1000px; */
+    /* margin-top: -500px; */
+    /* margin-left:0ch; */
+    /* margin-left:10cm; */
+    /* margin-left:50ex; */
+
+    /* object-fit: cover; */
+    /* clip-path: inset(0); */
+    /* -webkit-clip-path: inset(0); */
+    /* display: flex; */
+}
+
+/* исправить маржины и блоки и тд*/
