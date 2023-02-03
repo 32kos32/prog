@@ -1,16 +1,18 @@
-
-
-
+/* in comentaries is mobile layout "/*-reverse coment*" */
 body{
     text-align: center;
 }
 .box{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
+    justify-content: space-between; /* */
     align-items: center;
     text-align: center;
     margin-top: 50px;
+}
+.box-item{
+    flex-basis: 25%; /* */
 }
 .box-icon{
     background-color: #000;
@@ -23,11 +25,26 @@ body{
     border-radius: 100%;
     margin: 0 auto;
 }
-@media (min-width: 450px){
+/* @media (min-width: 450px){
     .box{
         flex-direction: row;
     }
     .box-item{
-    flex-basis: 50%;
+        flex-basis: 50%;
+    }
+}
+@media (min-weight: 700px) {
+    .box-item{
+        flex-basis: 25%;
+    }
+} */
+@media (max-width: 500px) {
+    .box-item{
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 340px) {
+    .box-item{
+        flex-basis: 100%;
     }
 }
