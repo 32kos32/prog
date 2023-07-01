@@ -28,6 +28,13 @@ def multiply_numbers():
 
     check_button.configure(command=check_answer)
 
+def reset_numbers():
+    num1, num2 = generate_numbers()
+    num1_label.configure(text=str(num1))
+    num2_label.configure(text=str(num2))
+    result_label.configure(text="")
+    answer_entry.delete(0, tk.END)
+
 # Create the main window
 window = tk.Tk()
 window.title("Multiplication Game")
@@ -54,8 +61,14 @@ answer_entry.pack(side=tk.LEFT)
 check_button = tk.Button(window, text="Check", font=("Arial", 24), command=multiply_numbers)
 check_button.pack(side=tk.LEFT)
 
+# Create the reset button
+reset_button = tk.Button(window, text="Reset", font=("Arial", 24), command=reset_numbers)
+reset_button.pack(side=tk.LEFT)
+
 # Generate initial numbers
-multiply_numbers()
+num1, num2 = generate_numbers()
+num1_label.configure(text=str(num1))
+num2_label.configure(text=str(num2))
 
 # Start the main event loop
 window.mainloop()
