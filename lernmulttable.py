@@ -50,7 +50,7 @@ num2_label.pack(side=tk.LEFT)
 
 tk.Label(window, text="=", font=("Arial", 24)).pack(side=tk.LEFT)
 
-result_label = tk.Label(window, font=("Arial", 24), width=4)
+result_label = tk.Label(window, font=("Arial", 24), width=16)
 result_label.pack(side=tk.LEFT)
 
 # Create the answer entry field
